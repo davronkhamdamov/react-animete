@@ -7,7 +7,7 @@ body {
   background: #aaa;
 }
 .box {
-  width: 500px;
+  width: 420px;
   height: auto;
   padding: 30px;
   border-radius: 20px;
@@ -24,7 +24,7 @@ body {
 button {
   width: 40px;
   height: 40px;
-  margin: 15px;
+  margin: 10px;
   border-radius: 50%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid transparent;
@@ -37,19 +37,20 @@ button:hover {
   transform: scale(1.04);
 }
 .star {
-  width: 0;
+  width: 1px;
   height: 10px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   transition: 0.5s;
-  margin: 0 20px;
 }
 .box:hover {
   transform: scale(1.01);
 }
+.btn-group {
+  width: 500px;
+}
 p {
   color: #555115;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transform: translate(0%);
   transition: 0.8s;
 }

@@ -1,22 +1,21 @@
+import { useState } from 'react';
 import './Animate.css';
 function Animate() {
+  let [id, setId] = useState(0);
   let a = (e) => animate(e.target.id);
   let b = (e) => animate(e.target.id);
   let c = (e) => animate(e.target.id);
   let d = (e) => animate(e.target.id);
   let e = (e) => animate(e.target.id);
   let f = (e) => animate(e.target.id);
-  let animate = (id) => {
-    document.getElementById('star').style.width = `${id * 17}%`;
-    let text = document.getElementById('text');
-    text.style.transform = `translate(${id * 16.7}%)`;
-    text.textContent = id * 20 + '%';
+  let changeId = { width: `${id}%` };
+  let animate = (i) => {
+    setId(i * 20);
   };
   return (
     <div className="box">
-      <p id="text">0%</p>
       <br />
-      <div className="star" id="star"></div>
+      <div className="star" style={changeId}></div>
       <div className="btn-group">
         <button onClick={a} id="0">
           0%
