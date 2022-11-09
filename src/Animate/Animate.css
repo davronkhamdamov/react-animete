@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa;
+}
+.box {
+  width: 500px;
+  height: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.2)
+  );
+  box-shadow: 8px 2px 5px rgba(0, 0, 0, 0.5) inset,
+    10px 10px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+button {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  border-radius: 50%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid transparent;
+  cursor: url(./rocket.png), auto;
+  background: rgba(0, 19, 200, 0.5);
+  color: white;
+  transition: 0.5s;
+}
+button:hover {
+  transform: scale(1.04);
+}
+.star {
+  width: 0;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 0 20px;
+}
+.box:hover {
+  transform: scale(1.01);
+}
+p {
+  color: #555115;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transform: translate(0%);
+  transition: 0.8s;
+}
